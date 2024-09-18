@@ -1,11 +1,13 @@
- let Greeting = function getGreeting(name) {
-    return 'Hello ' + name + '!';
+ let name = "Josh"
+ 
+ let getGreeting = function() {
+    console.log('Hello ' + name + '!');
     }
 
-console.log(Greeting)
-
-let getGreeting = (name) => {
+/*let getGreeting = (name) => {
     console.log('Hello ' + name + '!');
     }
 
 getGreeting("Josh")
+
+console.log(getGreeting)*/
