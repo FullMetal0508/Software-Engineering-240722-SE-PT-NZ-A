@@ -15,7 +15,7 @@ let replaceMiddle = animalsSorted.splice(1,3,"kangaroo","Cat")
 let findMatchingAnimals(beginsWith) = {
  
     for (i = 0; i < animals.length; i++) {
-        [i] = animals[i][0].startsWith());
+        animals[i] = animals[i][0].startsWith());
         
     }
 
