@@ -12,6 +12,7 @@ function sumSalaries(salaries){
     for( let pay in salaries){
         return (salaries[pay])
     }
+    
 }
 
 
