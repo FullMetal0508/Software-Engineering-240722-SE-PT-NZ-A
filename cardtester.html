@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Card Expands on Click</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      background-color: #f4f4f4;
+    }
+
+    /* Container for the card grid */
+    .card-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: 20px;
+      padding: 20px;
+      max-width: 1200px;
+      width: 100%;
+      position: relative;
+    }
+
+    /* Card container */
+    .card {
+      width: 100%;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      overflow: hidden;
+      transition: all 0.3s ease;
+      background-color: #fff;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      cursor: pointer;
+      text-align: center;
+      position: relative;
+      height: 200px; /* Set initial height */
+      z-index: 0;
+    }
+
+    /* Expanded state */
+    .expanded {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      z-index: 10;
+      transition: all 0.5s ease;
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    }
+
+    /* Card header (image or title) */
+    .card-header {
+      background-color: #007bff;
+      color: white;
+      padding: 20px;
+      font-size: 18px;
+    }
+
+    /* Card content (initial view) */
+    .card-content {
+      padding: 20px;
+      height: 80px; /* Restrict height */
+      overflow: hidden;
+      transition: all 0.3s ease;
+    }
+
+    /* Hidden card info (revealed on expand) */
+    .card-info {
+      padding: 0 20px 20px 20px;
+      height: 0;
+      overflow: hidden;
+      opacity: 0;
+      transition: height 0.3s ease, opacity 0.3s ease;
+    }
+
+    /* Expanded card content */
+    .expanded .card-info {
+      height: auto;
+      opacity: 1;
+    }
+
+  </style>
+</head>
+<body>
+
+  <!-- Card Grid Container -->
+  <div class="card-grid">
+    <!-- Card 1 -->
+    <div class="card" onclick="toggleCard(this)">
+      <div class="card-header">Product 1</div>
+      <div class="card-content">
+        <p>This is a brief description of Product 1.</p>
+      </div>
+      <div class="card-info">
+        <p>More Info: Product 1 is known for its amazing quality and affordable price.</p>
+      </div>
+    </div>
+
+    <!-- Card 2 -->
+    <div class="card" onclick="toggleCard(this)">
+      <div class="card-header">Product 2</div>
+      <div class="card-content">
+        <p>This is a brief description of Product 2.</p>
+      </div>
+      <div class="card-info">
+        <p>More Info: Product 2 has received excellent reviews for performance and durability.</p>
+      </div>
+    </div>
+
+    <!-- Card 3 -->
+    <div class="card" onclick="toggleCard(this)">
+      <div class="card-header">Product 3</div>
+      <div class="card-content">
+        <p>This is a brief description of Product 3.</p>
+      </div>
+      <div class="card-info">
+        <p>More Info: Product 3 is a popular choice for its innovative features.</p>
+      </div>
+    </div>
+
+    <!-- Card 4 -->
+    <div class="card" onclick="toggleCard(this)">
+      <div class="card-header">Product 4</div>
+      <div class="card-content">
+        <p>This is a brief description of Product 4.</p>
+      </div>
+      <div class="card-info">
+        <p>More Info: Product 4 stands out with its superior design and technology.</p>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    // JavaScript to handle the click event and toggle card expansion
+    function toggleCard(card) {
+      // If the card is already expanded, remove the expanded class
+      if (card.classList.contains('expanded')) {
+        card.classList.remove('expanded');
+      } else {
+        // Close any other expanded cards
+        const expandedCards = document.querySelectorAll('.card.expanded');
+        expandedCards.forEach((expandedCard) => {
+          expandedCard.classList.remove('expanded');
+        });
+        
+        // Add the expanded class to the clicked card
+        card.classList.add('expanded');
+      }
+    }
+  </script>
+
+</body>
+</html>

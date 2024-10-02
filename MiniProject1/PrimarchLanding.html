@@ -1,0 +1,139 @@
+<html lang="en"></html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Astartes Primarchs</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="layout2.css" rel="stylesheet">
+
+</head>
+
+
+<body>
+
+    <!--Card Template-->
+    <template id="card-template">
+        <div class="card-grid">
+        <div class="card" onclick="toggleCard(this)">
+            <div class="card-header">Product 1</div>
+            <div class="card-content">
+              <p>This is a brief description of Product 1.</p>
+            </div>
+            <div class="card-info">
+              <p>More Info: Product 1 is known for its amazing quality and affordable price.</p>
+            </div>
+          </div>
+        </div>
+    </template>
+
+<header>
+
+ <!-- Navigation bar -->
+ <nav class="navbar">
+    <div class="logo">
+        <a href="./AdeptusHome.html">BrandLogo</a>
+    </div>
+    <ul class="nav-links" id="nav-links">
+        <li><a href="./PrimarchLanding.html">Primarchs</a></li>
+        <li><a href="./LegionLanding.html">Legions</a></li>
+        <li><a href="./ArmyBuilder.html">Services</a></li>
+        <li><a href="#">Contact</a></li>
+    </ul>
+    <div class="hamburger" id="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+</nav>
+
+  <script>
+    
+    const hamburger = document.getElementById('hamburger');
+    const navLinks = document.getElementById('nav-links');
+
+    hamburger.addEventListener('click', () => {
+        navLinks.classList.toggle('active');
+        hamburger.classList.toggle('active');
+    });
+
+  </script>
+
+</header>
+
+<div class="row" id="card-list">
+
+</div>       
+
+
+<script >
+    items = new Array()
+
+/*fetch('https://fakestoreapi.com/products/categories')
+        .then(response=>response.json())
+        .then(json=>json.forEach((category) => {let option = document.createElement('option')
+            option.text = category
+            option.value = category
+            document.getElementById('category').appendChild(option)}))*/
+
+fetch('./Primarch.json')
+            .then(response=>response.json())
+            .then((json)=> {
+                items = json
+                json.forEach((primarch) => {addCard(primarch.name,primarch.legion,primarch.allegiance)})
+                }
+            )
+
+
+/*function itemType() {
+
+            let filteredList = null
+            document.getElementById("card-list").innerHTML = ''
+            let selectedCategory = document.getElementById("category").value
+            if(items.length!=0)
+            {
+                filteredList = items.filter(item => item.category == selectedCategory)
+                filteredList.forEach((primarch) => {addCard(primarch.name,primarch.legion,primarch.description)})
+            }
+}*/
+            
+function addCard(name,legion,description) {
+        // clone the template
+        const template =
+            document.getElementById("card-template")
+                .content.cloneNode(true);
+        // populate the template
+        template.querySelector('.card-header').innerText =
+            name;
+        template.querySelector('.card-content').innerText =
+            legion;
+        // include the populated template into the page
+        template.querySelector('.card-info').innerText =
+            description; 
+            
+        document.querySelector('#card-list')
+            .appendChild(template);
+    }   
+
+    // JavaScript to handle the click event and toggle card expansion
+    function toggleCard(card) {
+      // If the card is already expanded, remove the expanded class
+      if (card.classList.contains('expanded')) {
+        card.classList.remove('expanded');
+      } else {
+        // Close any other expanded cards
+        const expandedCards = document.querySelectorAll('.card.expanded');
+        expandedCards.forEach((expandedCard) => {
+          expandedCard.classList.remove('expanded');
+        });
+        
+        // Add the expanded class to the clicked card
+        card.classList.add('expanded');
+      }
+    }
+
+</script>   
+
+
+
+</body>
+</html>

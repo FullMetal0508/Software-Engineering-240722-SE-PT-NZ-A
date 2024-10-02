@@ -1,0 +1,124 @@
+[
+      {
+        "name": "Lion El'Jonson",
+        "legion": "Dark Angels",
+        "description": "The first Primarch discovered by the Emperor, known for his strategic genius and knightly demeanor.",
+        "allegiance": "Loyalist",
+        "legion_saying": "The Lion shall lead.",
+        "image": "https://example.com/lion_el_jonson.jpg"
+      },
+      {
+        "name": "Fulgrim",
+        "legion": "Emperor's Children",
+        "description": "A master of aesthetics and perfection, he was ultimately corrupted by Chaos.",
+        "allegiance": "Traitor",
+        "legion_saying": "The perfection of art is the perfection of war.",
+        "image": "https://example.com/fulgrim.jpg"
+      },
+      {
+        "name": "Perturabo",
+        "legion": "Iron Warriors",
+        "description": "A brilliant siege master who harbors a deep resentment towards the Imperium.",
+        "allegiance": "Traitor",
+        "legion_saying": "Iron within, iron without!",
+        "image": "https://example.com/perturabo.jpg"
+      },
+      {
+        "name": "Jaghatai Khan",
+        "legion": "White Scars",
+        "description": "Known for his speed and mobility in warfare, he embodies the spirit of the nomadic tribes.",
+        "allegiance": "Loyalist",
+        "legion_saying": "The hunt is on!",
+        "image": "https://example.com/jaghatai_khan.jpg"
+      },
+      {
+        "name": "Leman Russ",
+        "legion": "Space Wolves",
+        "description": "The wolf lord, famed for his ferocity in battle and loyalty to the Emperor.",
+        "allegiance": "Loyalist",
+        "legion_saying": "For Russ and the Allfather!",
+        "image": "https://example.com/leman_russ.jpg"
+      },
+      {
+        "name": "Rogal Dorn",
+        "legion": "Imperial Fists",
+        "description": "A stalwart defender and master of fortifications, known for his unyielding resolve.",
+        "allegiance": "Loyalist",
+        "legion_saying": "The Emperor's will is our shield.",
+        "image": "https://example.com/rogal_dorn.jpg"
+      },
+      {
+        "name": "Sanguinius",
+        "legion": "Blood Angels",
+        "description": "An angelic figure known for his nobility and tragic fate.",
+        "allegiance": "Loyalist",
+        "legion_saying": "In the blood, we find our strength.",
+        "image": "https://example.com/sanguinius.jpg"
+      },
+      {
+        "name": "Vulkan",
+        "legion": "Salamanders",
+        "description": "A compassionate leader who values humanity and craftsmanship.",
+        "allegiance": "Loyalist",
+        "legion_saying": "We forge our own destiny.",
+        "image": "https://example.com/vulkan.jpg"
+      },
+      {
+        "name": "Corvus Corax",
+        "legion": "Raven Guard",
+        "description": "A master of stealth and guerrilla warfare, he sought vengeance against the oppressors.",
+        "allegiance": "Loyalist",
+        "legion_saying": "We strike from the shadows.",
+        "image": "https://example.com/corvus_corax.jpg"
+      },
+      {
+        "name": "Alpharius Omegon",
+        "legion": "Alpha Legion",
+        "description": "The twin Primarchs known for their deception and manipulation.",
+        "allegiance": "Traitor",
+        "legion_saying": "The serpent's way is the only way.",
+        "image": "https://example.com/alpharius_omegon.jpg"
+      },
+      {
+        "name": "Magnus the Red",
+        "legion": "Thousand Sons",
+        "description": "A powerful psyker whose pursuit of knowledge led to tragic consequences.",
+        "allegiance": "Traitor",
+        "legion_saying": "Knowledge is power.",
+        "image": "https://example.com/magnus_the_red.jpg"
+      },
+      {
+        "name": "Mortarion",
+        "legion": "Death Guard",
+        "description": "A grim warrior who embodies the concept of endurance and resilience.",
+        "allegiance": "Traitor",
+        "legion_saying": "Death is the price of victory.",
+        "image": "https://example.com/mortarion.jpg"
+      },
+      {
+        "name": "Angron",
+        "legion": "World Eaters",
+        "description": "A brutal warrior driven by rage and the desire for bloodshed.",
+        "allegiance": "Traitor",
+        "legion_saying": "Blood for the Blood God!",
+        "image": "https://example.com/angron.jpg"
+      },
+      {
+        "name": "Horus Lupercal",
+        "legion": "Luna Wolves / Sons of Horus",
+        "description": "The favored son of the Emperor, whose fall led to the Horus Heresy.",
+        "allegiance": "Traitor",
+        "legion_saying": "For the glory of the Warmaster!",
+        "image": "https://example.com/horus_lupercal.jpg"
+      },
+      {
+        "name": "Lorgar",
+        "legion": "Word Bearers",
+        "description": "A deeply religious Primarch who worshipped Chaos and sought to spread its influence.",
+        "allegiance": "Traitor",
+        "legion_saying": "Faith is the greatest weapon.",
+        "image": "https://example.com/lorgar.jpg"
+      }
+    ]
+  
+  
