@@ -5,7 +5,7 @@
         "description": "The first Primarch discovered by the Emperor, known for his strategic genius and knightly demeanor.",
         "allegiance": "Loyalist",
         "legion_saying": "The Lion shall lead.",
-        "image": "https://example.com/lion_el_jonson.jpg"
+        "image": "https://warhammeruniverse.com/wp-content/uploads/2024/04/6.jpg"
       },
       {
         "name": "Fulgrim",
@@ -48,12 +48,28 @@
         "image": "https://example.com/rogal_dorn.jpg"
       },
       {
+        "name": "Konrad Curze",
+        "legion": "Night Lords",
+        "description": "A savant in the practices of psychological warfare, focusing on mass propoganda and torture.",
+        "allegiance": "Traitor",
+        "legion_saying": "Ave Dominus Nox.",
+        "image": "https://example.com/konrad_curze.jpg"
+      },
+      {
         "name": "Sanguinius",
         "legion": "Blood Angels",
         "description": "An angelic figure known for his nobility and tragic fate.",
         "allegiance": "Loyalist",
         "legion_saying": "In the blood, we find our strength.",
         "image": "https://example.com/sanguinius.jpg"
+      },
+      {
+        "name": "Ferrus Manus",
+        "legion": "Iron Fists",
+        "description": "A resolute leader who favours replacing human flesh for more optimal mechanical augmentations.",
+        "allegiance": "Loyalist",
+        "legion_saying": "The Flesh is weak! Iron Prevails!",
+        "image": "https://example.com/ferrus_manus.jpg"
       },
       {
         "name": "Vulkan",
@@ -118,6 +134,14 @@
         "allegiance": "Traitor",
         "legion_saying": "Faith is the greatest weapon.",
         "image": "https://example.com/lorgar.jpg"
+      },
+      {
+        "name": "Roboute Guilliman",
+        "legion": "Ultramarines",
+        "description": "The prime exemplar of the Emperors Will, and a resolute and tactical leader.",
+        "allegiance": "Loyalist",
+        "legion_saying": "Courage and Honour! For Macragge!!",
+        "image": "https://example.com/roboute_guilliman.jpg"
       }
     ]
   

@@ -107,6 +107,10 @@ body {
     }
 }
 
+.hero {
+
+}
+
 /*cards*/
 
 .card-grid {
@@ -165,7 +169,7 @@ body {
   }
 
   /* Hidden card info (revealed on expand) */
-  .card-info {
+  .card-info,.card-more,.card-img {
     padding: 0 20px 20px 20px;
     height: 0;
     overflow: hidden;
@@ -179,3 +183,12 @@ body {
     opacity: 1;
   }
 
+  .expanded .card-more {
+    height: auto;
+    opacity: 1;
+  }
+
+  .expanded .card-img {
+    height: auto;
+    opacity: 1;
+  }

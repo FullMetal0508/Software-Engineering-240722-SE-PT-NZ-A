@@ -19,9 +19,13 @@
             <div class="card-content">
               <p>This is a brief description of Product 1.</p>
             </div>
+            <div>
+              <img class="card-img">
+            </div>
             <div class="card-info">
               <p>More Info: Product 1 is known for its amazing quality and affordable price.</p>
             </div>
+            <div class="card-more"> More Info: Seen on expansion</div>
           </div>
         </div>
     </template>
@@ -79,7 +83,7 @@ fetch('./Primarch.json')
             .then(response=>response.json())
             .then((json)=> {
                 items = json
-                json.forEach((primarch) => {addCard(primarch.name,primarch.legion,primarch.allegiance)})
+                json.forEach((primarch) => {addCard(primarch.name,primarch.legion,primarch.image,primarch.allegiance,primarch.description)})
                 }
             )
 
@@ -96,7 +100,7 @@ fetch('./Primarch.json')
             }
 }*/
             
-function addCard(name,legion,description) {
+function addCard(name,legion,image,description,allegiance) {
         // clone the template
         const template =
             document.getElementById("card-template")
@@ -106,10 +110,16 @@ function addCard(name,legion,description) {
             name;
         template.querySelector('.card-content').innerText =
             legion;
+
+        template.querySelector('.card-img').innerHTML =
+            image;
         // include the populated template into the page
         template.querySelector('.card-info').innerText =
             description; 
-            
+
+        template.querySelector('.card-more').innerText =
+            allegiance;
+
         document.querySelector('#card-list')
             .appendChild(template);
     }   
