@@ -40,8 +40,7 @@
     <ul class="nav-links" id="nav-links">
         <li><a href="./PrimarchLanding.html">Primarchs</a></li>
         <li><a href="./LegionLanding.html">Legions</a></li>
-        <li><a href="./ArmyBuilder.html">Services</a></li>
-        <li><a href="#">Contact</a></li>
+        <li><a href="./ArmyBuilder.html">Army Builder</a></li>
     </ul>
     <div class="hamburger" id="hamburger">
         <span></span>
@@ -111,7 +110,7 @@ function addCard(name,legion,image,description,allegiance) {
         template.querySelector('.card-content').innerText =
             legion;
 
-        template.querySelector('.card-img').innerHTML =
+        template.querySelector('.card-img').src =
             image;
         // include the populated template into the page
         template.querySelector('.card-info').innerText =
