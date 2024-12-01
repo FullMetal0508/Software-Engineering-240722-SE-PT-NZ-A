@@ -1,5 +1,5 @@
 
-const primarchsList = [
+const PrimarchsList = [
         {
             "id": 0,
             "name": "Lion El'Jonson",
@@ -164,4 +164,4 @@ const primarchsList = [
           }
     ]
 
-export default primarchsList
+export default PrimarchsList

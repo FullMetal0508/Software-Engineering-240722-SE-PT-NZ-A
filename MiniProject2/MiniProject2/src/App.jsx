@@ -1,15 +1,22 @@
 import './App.css'
-import DisplayPrimarchs from './Components/DisplayPrimarchs'
-
+import LeftPanel from './Components/LeftPanel'
+import RightPanel from './Components/RightPanel'
+import NavBar from './Components/Navbar'
 
 function App() {
 
   return (
     <>
-    
-    <DisplayPrimarchs></DisplayPrimarchs>
+    <div>
+    <NavBar></NavBar>
+    </div>
+    <div>
+    <LeftPanel></LeftPanel>
+    </div>
+    <div>
+    <RightPanel></RightPanel>
+    </div>
    
-     
     </>
   )
 }
